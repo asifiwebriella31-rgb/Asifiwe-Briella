@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Asifiwe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">✦ Asifiwe</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="portfolio-page">
+
+        <!-- Header -->
+        <div class="portfolio-header">
+            <h1>My STEM Projects</h1>
+            <p>Things I've built, explored, and dreamed into reality.</p>
+        </div>
+
+        <!-- Carousel Wrapper -->
+        <div class="carousel-wrapper">
+
+            <!-- Left Arrow -->
+            <button class="carousel-btn prev-btn" onclick="moveCarousel(-1)">❮</button>
+
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+
+                <!-- Slide 1 -->
+                <div class="carousel-slide active">
+                    <div class="project-card">
+                        <div class="img-con">
+                            <img src="https://fcsqbqyomghwjhlnmvgn.supabase.co/storage/v1/object/public/attachments/b839f638-f516-4db4-99e3-46f30c6c7c5d.jpg" alt="Sensing the Future">
+                        </div>
+                        <h3>Sensing the Future</h3>
+                        <p>I designed a prototype for an autonomous car using sensors to detect obstacles, aiming to improve community road safety.</p>
+                        <a href="https://canva.link/o0c2or62ot043yp" target="_blank" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="project-card">
+                        <div class="img-con">
+                            <img src="https://fcsqbqyomghwjhlnmvgn.supabase.co/storage/v1/object/public/attachments/ceabbbea-8cc8-4b2d-98ec-27b8fda46c9a.png" alt="Bio-Habitat">
+                        </div>
+                        <h3>Bio-Habitat</h3>
+                        <p>Using SketchUp, I designed a 3D model of a sustainable habitat that balances architecture with ecological health.</p>
+                        <a href="https://docs.google.com/document/d/1EfdPgndpe8XkyKMG-nf5WwU5Tr2MDzIjKUlbEFhq8JE/edit?usp=sharing" target="_blank" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <div class="project-card">
+                        <div class="img-con">
+                            <img src="https://fcsqbqyomghwjhlnmvgn.supabase.co/storage/v1/object/public/attachments/4e65e178-ecd1-4e7c-b094-5cdf9187d9a4.jpg" alt="Brainpostor Game">
+                        </div>
+                        <h3>Brainpostor: Infinity Edition</h3>
+                        <p>How far can you go? Face an endless stream of escalating trivia across all categories. Race the clock. Survive. A traitor walks among the crew. Answer trivia to complete ship tasks — then unmask the impostor before it's too late.</p>
+                        <a href="https://interactive-game-int-a7i2.bolt.host/" target="_blank" class="project-link">Play Game →</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Arrow -->
+            <button class="carousel-btn next-btn" onclick="moveCarousel(1)">❯</button>
+
+        </div>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+
+        <!-- Quick Links to other pages -->
+        <div class="quick-links" style="margin-top: 3rem;">
+            <a href="index.html" class="quick-link">✦ Home</a>
+            <a href="about.html" class="quick-link">✦ About Me</a>
+            <a href="contact.html" class="quick-link">✦ Get In Touch</a>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
